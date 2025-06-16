@@ -4,13 +4,17 @@ import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
-@EqualsAndHashCode(callSuper = true)
+
 @NoArgsConstructor
 @AllArgsConstructor
-@SuperBuilder
+@Builder
 @Data
 @Entity
-public class Resource extends BaseEntity {
+public class Resource{
+
+    @Id
+    @GeneratedValue
+    private Integer id;
 
     private String name;
 
