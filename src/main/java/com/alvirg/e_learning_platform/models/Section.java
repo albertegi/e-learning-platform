@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -25,4 +27,7 @@ public class Section {
     @ManyToOne
     @JoinColumn(name = "course_id") // course_id is the foreign key name. from the other Course entity
     private Course course;
+
+    @OneToMany(mappedBy = "section")
+    private List<Lecture> lectures;
 }
