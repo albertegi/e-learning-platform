@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -38,6 +39,9 @@ public class Author {
     private String email;
 
     private int age;
+
+    @ManyToMany(mappedBy = "authors")
+    private List<Course> courses;
 
 }
 
