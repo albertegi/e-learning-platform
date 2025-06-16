@@ -2,21 +2,17 @@ package com.alvirg.e_learning_platform.models;
 
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import lombok.experimental.SuperBuilder;
 
+@EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@SuperBuilder
 @Data
 @Entity
-public class Lecture {
-
-    @Id
-    @GeneratedValue
-    private Integer id;
+public class Lecture extends BaseEntity {
 
     private String name;
 
