@@ -24,4 +24,9 @@ public class Lecture {
     @ManyToOne
     @JoinColumn(name = "section_id")
     private Section section;
+
+    // owner of this relationship
+    @OneToOne
+    @JoinColumn(name = "resouce_id") // resource_id is the foreign key from Resource Entity
+    private Resource resource;
 }
