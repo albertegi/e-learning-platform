@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5437/e-learning-db
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
+    username: albert
+    password: albert
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
