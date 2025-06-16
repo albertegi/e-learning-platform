@@ -1,23 +1,19 @@
 package com.alvirg.e_learning_platform.models;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import java.util.List;
 
+@EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@SuperBuilder
 @Data
 @Entity
-public class Section {
-
-    @Id
-    @GeneratedValue
-    private Integer id;
+public class Section extends BaseEntity {
 
     private String name;
 
