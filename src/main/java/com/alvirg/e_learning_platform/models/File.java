@@ -1,15 +1,15 @@
 package com.alvirg.e_learning_platform.models;
 
-
-import jakarta.persistence.Entity;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-public class Video{
+public class File {
 
-    private int length;
+    private String fileType;
 }
