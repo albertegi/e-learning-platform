@@ -5,13 +5,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Embeddable
-public class OrderId {
+public class OrderId implements Serializable {
     // create an embedded id
     // it's not a persistent entity. It's like the mapped Superclass
     // it's  a composition
