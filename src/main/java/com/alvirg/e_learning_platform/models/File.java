@@ -14,7 +14,7 @@ import lombok.experimental.SuperBuilder;
 @AllArgsConstructor
 @SuperBuilder
 @Entity
-@DiscriminatorValue("F")
+//@DiscriminatorValue("F") For SINGLE_TABLe
 public class File extends Resource {
 
     private String fileType;

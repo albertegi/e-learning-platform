@@ -14,7 +14,7 @@ import lombok.experimental.SuperBuilder;
 @AllArgsConstructor
 @SuperBuilder
 @Entity
-@DiscriminatorValue("T")
+//@DiscriminatorValue("T") For SINGLE_TABLe
 public class Text extends Resource {
 
     private String content;
